@@ -2,20 +2,139 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+body {
+  font-family: "tesla-font";
 }
 
-.main-container-1 {
+@font-face {
+  font-family: "tesla-font";
+  src: url("https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2")
+    format("woff2");
+}
+.wrapper {
+  max-width: 100vw;
+}
+.main {
   height: 100vh;
-  width: 100vw;
-  background-image: url(/images/M3-Hero-LHD-US-D.jpeg);
+}
+
+.container1 {
+  background-image: url(/assets/img/M3-Hero-LHD-US-D.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: 50% 30%;
+}
+.container2 {
+  background: black;
+}
+.nav-side-list {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  /* border: solid 3px yellow; */
 }
 
 .navbar {
-  width: 100vw;
-  height: 60px;
-  border: solid 3px yellow;
+  height: 54px;
+  top: 0;
   position: sticky;
+  padding-top: 10px;
+}
+
+.logo {
+  position: fixed;
+  width: 120px;
+  fill: white;
+  left: 50px;
+  top: 18px;
+}
+
+ol {
+  text-align: center;
+  height: 50px;
+}
+li {
+  display: inline-block;
+  border-radius: 12px;
+  height: 30px;
+  padding-top: 5px;
+  transition: 0.3s;
+}
+li:hover {
+  background: #6d7379;
+}
+a {
+  text-decoration: none;
+}
+span {
+  font-weight: 600;
+  font-family: "tesla-font";
+  font-size: 14px;
+  color: white;
+  padding: 15px;
+}
+
+.main-title {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.bottom-nav {
+  /* border: solid 3px yellow; */
+  max-width: 640px;
+  /* height: 90px; */
+  height: 64px;
+  margin: 0 auto;
+  margin-top: 65vh;
+  color: white;
+  font-weight: 600;
+}
+.bottom_nav_card {
+  display: inline-block;
+  width: 120px;
+  /* height: 100%; */
+  /* background: rgb(97, 97, 97); */
+  /* border: solid 1px red; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.seconds_title {
+  text-align: center;
+  display: inline-block;
+  font-size: 28px;
+}
+.miles_title,
+.AWD_title {
+  display: inline-block;
+  text-align: center;
+  font-size: 28px;
+}
+.sbtn-title {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
+}
+.top_card {
+  text-align: center;
+
+  /* border: solid 1px blue; */
+  height: 60%;
+}
+.bottom_card {
+  /* border: solid 2px green; */
+  height: 40%;
+}
+.order-btn {
+  border: 2px white solid;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 45px;
+  font-size: 12px;
+  color: white;
+  width: 160px;
+  height: 40px;
 }
