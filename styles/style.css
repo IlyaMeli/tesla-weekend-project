@@ -36,11 +36,12 @@ body {
 }
 
 .container1 {
-  background-image: url(/assets/img/M3-Hero-LHD-US-D.jpeg);
+  background-image: url(../assets/img/M3-Hero-LHD-US-D.jpeg);
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-size: 100%;
   background-position: 50% 35%;
+  background-color: black;
 }
 .container2 {
   background: black;
@@ -66,6 +67,7 @@ body {
   left: 49px;
   top: 18px;
 }
+
 
 ol {
   text-align: center;
@@ -104,21 +106,16 @@ span {
 .bottom-nav {
   /* border: solid 3px yellow; */
   max-width: 640px;
-  /* max-width: 100%; */
-  /* height: 90px; */
   height: 64px;
   margin-left: 650px;
   margin-top: 63vh;
   color: white;
   font-weight: 600;
-  /* text-align: center; */
   position: absolute;
 }
 .bottom_nav_card {
   display: inline-block;
   width: 120px;
-  /* height: 100%; */
-  /* background: rgb(97, 97, 97); */
   /* border: solid 1px red; */
   margin-left: 20px;
   margin-right: 10px;
@@ -143,11 +140,9 @@ span {
   text-align: center;
 
   /* border: solid 1px blue; */
-  /* height: 40%; */
 }
 .bottom_card {
   /* border: solid 2px green; */
-  /* height: 50%; */
   padding-top: 5px;
 }
 .order-btn {
@@ -159,8 +154,6 @@ span {
   width: 160px;
   height: 40px;
   position: relative;
-  /* top: 86%;
-  right: 33.5%; */
   left: 100%;
   bottom: 50px;
   transition: 0.3s;
@@ -179,7 +172,7 @@ span {
 }
 
 .container2 {
-  background-image: url(/assets/img/model_3_safety_hero.png);
+  background-image: url(../assets/img/model_3_safety_hero.png);
   background-repeat: no-repeat;
   background-size: 78%;
   background-position: 53% 100%;
@@ -208,7 +201,6 @@ span {
 .content-wrapper {
   margin: 0 auto;
   /* border: solid 2px red; */
-  /* width: 77%; */
 }
 
 .bs-title {
@@ -218,11 +210,9 @@ span {
   font-size: 17px;
   font-weight: 300;
   padding-top: 30px;
-  /* padding-left: 50px; */
 }
 
 .bottom-side-bar {
-  /* width: 314px; */
   height: 300px;
   background: #e2e4e4;
   margin: 0 auto;
@@ -239,7 +229,6 @@ span {
 .stars-ul {
   float: left;
   color: black;
-  /* width: 100%; */
   list-style-type: none;
   padding-top: 30px;
 }
@@ -271,10 +260,9 @@ span {
 }
 .bottom-side-btn-wrapper {
   position: absolute;
-  /* height: 100%; */
   /* border: solid 2px red; */
   width: 314px;
-  /* margin-top: 460px; */
+  margin-top: 460px;
 }
 #second-btn {
   color: black;
@@ -286,15 +274,13 @@ span {
   left: 80px;
   bottom: 28px;
 }
+
 .learn-more-h3 {
   font-size: 13px;
   color: black;
-  /* float: static; */
-  padding-right: 16px;
-  padding-top: 12px;
   cursor: pointer;
-  /* position: relative;
-  top: 10px; */
+  width:35%;
+  margin-left: 47px;
 }
 #plus-button {
   border: solid 3px black;
@@ -302,9 +288,107 @@ span {
   position: static;
   width: 40px;
   float: left;
-  margin-right: 10px;
+  position: relative;
+  left: 3px;
+  bottom: 28px;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+#plus-button:hover , #second-btn:hover{
+  background-color: black;
+  color: white;
 }
 
-.container3 {
-  background-color: black;
+.learn-more-h3:hover ~ #plus-button {
+  color: #fff;
+  background-color: #000;
+}
+
+
+
+
+.container3-bg{
+  background-image: url(../assets/img/lhd-performance-hero-desktop.jfif);
+  height: 73%;
+  background-position-y:  50%;
+  background-repeat: no-repeat;
+}
+
+.nav-bot{
+  background: white;
+ height: 27%;
+}
+.last-page-nav-wrapper{
+  /* border: solid 3px; */
+ position: relative;
+ top: 71%;
+  margin: 0 auto;
+  height:180px;
+  text-align: center;
+}
+
+.last-page-card1,.last-page-card3,.last-page-card2{
+  display: inline-block;
+  width:300px;
+  height: 60%;
+  color: white;
+  margin-right: 20px;;
+  margin-left: 20px;;
+  /* border: solid 3px green; */
+}
+
+
+
+.card1-p1,.card2-p2,.card3-p3{
+  font-size: 12px;
+  margin-bottom: 20px;
+  
+}
+.card1-h1,.card2-h1,.card3-h1{
+  padding-top: 20px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.speedomer2{
+  width:18%;
+  position: relative;
+  left: 20%;
+  top:38px;
+}
+.card1-h1{
+  margin-left:40px;
+}
+
+.nav-bot{
+  position: absolute;
+}
+
+.nav-bot-content-wrapper{
+  width: 70%;
+  height: 200px;
+  /* border:solid 3px red; */
+  margin: 0 auto;
+  position: relative;
+}
+#nav-bot-side-wrapper{
+  /* border: solid 3px green; */
+  position: absolute;
+  bottom: 1%;
+}
+
+.nav-bot-content-r{
+  margin-left: 180px;;
+  margin-top: 10px;
+
+  width: 30%;
+}
+
+.nav-bot-content-l{
+  width: 45%;
+  font-size: 14px;;
+  /* border: solid 3px green; */
+  position: relative;
+  bottom:25%;
+  left: 40%;
+  line-height: 20px;
 }
